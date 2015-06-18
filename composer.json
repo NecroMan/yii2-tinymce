@@ -1,0 +1,27 @@
+{
+  "name": "as-milano/yii2-tinymce",
+  "description": "Yii2 extension to use TinyMce with Compressor and FileManager",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "tinymce",
+    "wysiwyg"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "NecroMan",
+      "email": "nm666@bk.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "bower-asset/tinymce-dist": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "milano\\tinymce\\": ""
+    }
+  }
+}

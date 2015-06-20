@@ -10,7 +10,7 @@ class TinyMceController extends Controller
     {
         return [
             'tinyMceCompressor' => [
-                'class' => TinyMce::className()
+                'class' => TinyMceCompressorAction::className()
             ]
         ];
     }

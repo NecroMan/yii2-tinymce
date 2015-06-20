@@ -38,34 +38,25 @@ Usage
 $form->field($model, 'content')->widget(\milano\tinymce\TinyMce::className())
 ```
 
-### Scripts Compressor Action
+### Scripts compressor
 
 This can be used to optimize widget loading time.
 
-At fist setup compressor action:
+At fist setup controller map:
 
 ```php
-/**
- * Site controller
- */
-class SiteController extends Controller
-{
-    public function actions()
-    {
-        return [
-            'tinyMceCompressor' => [
-                'class' => \milano\tinymce\TinyMce::className()
-            ],
-        ];
-    }
-}
+'controllerMap' => [
+    'tinyMce' => [
+        'class' => 'milano\tinymce\TinyMceController',
+    ]
+],
 ```
 
 Next add route to configured action to widget options:
 
 ```php
 $form->field($model, 'content')->widget(\milano\tinymce\TinyMce::className(), [
-    'compressorRoute' => 'site/tinyMceCompressor'
+    'compressorRoute' => 'tinyMce/tinyMceCompressor'
 ])
 ```
 
@@ -132,13 +123,13 @@ You can customize some window (width and height) and manager (language, filter, 
             ],
         ],
         'watermark' => [
-                'source'         => __DIR__.'/logo.png', // Path to Water mark image
-                 'marginRight'    => 5,          // Margin right pixel
-                 'marginBottom'   => 5,          // Margin bottom pixel
-                 'quality'        => 95,         // JPEG image save quality
-                 'transparency'   => 70,         // Water mark image transparency ( other than PNG )
-                 'targetType'     => IMG_GIF|IMG_JPG|IMG_PNG|IMG_WBMP, // Target image formats ( bit-field )
-                 'targetMinPixel' => 200         // Target image minimum pixel size
+                'source'         => __DIR__.'/logo.png',
+                 'marginRight'    => 5,
+                 'marginBottom'   => 5,
+                 'quality'        => 95,
+                 'transparency'   => 70,
+                 'targetType'     => IMG_GIF|IMG_JPG|IMG_PNG|IMG_WBMP,
+                 'targetMinPixel' => 200
         ]
     ],
     'elf2' => [

@@ -44,17 +44,17 @@ class TinyMceCompressorAction extends Action
     public $settings = array();
 
     private static $defaultSettings = array(
-        "plugins" => "",
-        "themes" => "",
-        "languages" => "",
-        "disk_cache" => true,
-        "expires" => "30d",
-        "cache_dir" => "",
-        "tinymce_dir" => "",
-        "compress" => true,
-        "files" => "",
-        "source" => false,
-        'baseUrl' => "",
+        'plugins' => '',
+        'themes' => '',
+        'languages' => '',
+        'disk_cache' => true,
+        'expires' => '30d',
+        'cache_dir' => '',
+        'tinymce_dir' => '',
+        'compress' => true,
+        'files' => '',
+        'source' => false,
+        'baseUrl' => '',
     );
 
     public function init()

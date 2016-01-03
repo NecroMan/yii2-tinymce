@@ -9,7 +9,7 @@ Provides:
 * integration with file managers like elFinder;
 * integration with spelling services like Yandex.
 
-Fork of [another extension](https://github.com/zxbodya/yii-tinymce) with some features:
+Fork of [another extension](https://github.com/zxbodya/yii2-tinymce) with some additional features:
 * TinyMCE gone to npm package to always have the latest version;
 * Added integration with great [elFinder extension](https://github.com/MihailDev/yii2-elfinder);
 * (TODO) Icon to insert many images at once;

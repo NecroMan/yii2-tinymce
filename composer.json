@@ -12,11 +12,13 @@
   "authors": [
     {
       "name": "NecroMan",
-      "email": "nm666@bk.ru"
+      "email": "nm666@bk.ru",
+      "homepage": "http://as-milano.ru/"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
-    "yiisoft/yii2": "*",
+    "yiisoft/yii2": "~2.0",
     "bower-asset/tinymce-dist": "dev-master"
   },
   "autoload": {

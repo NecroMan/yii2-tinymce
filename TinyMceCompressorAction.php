@@ -309,7 +309,7 @@ class TinyMceCompressorAction extends Action
             $urlParams['src'] = ($settings["source"] === true ? "true" : "false");
         }
 
-        return Url::to([$route] + $urlParams);
+        return Url::to([$route] + $urlParams, true);
     }
 
     /**
